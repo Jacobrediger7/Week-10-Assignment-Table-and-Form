@@ -1,0 +1,17 @@
+/* styles.css */
+
+/* Custom styles for body */
+body {
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+/* Custom styles for the heading */
+h2 {
+    color: #007bff; /* Bootstrap's primary blue color */
+    margin-bottom: 30px; /* Space below the heading */
+}
+
+/* Custom styles for the table */
+.table {
+    margin-top: 20px;
+}

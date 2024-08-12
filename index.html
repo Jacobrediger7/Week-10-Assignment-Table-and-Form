@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"></link>
+</head>
+<body>
+    <!-- Main content of the document -->
+
+    <div class="container mt-5">
+        <!-- A Bootstrap container to align content with proper margins, with top margin added via mt-5 -->
+
+        <h2 class="text-center">Bootstrap Table and Form</h2>
+        <!-- Heading for the page, centered using Bootstrap's text-center class -->
+
+        <!-- Bootstrap Form -->
+        <form id="dataForm" class="mb-4">
+            <!-- Form element with a unique ID for JavaScript interaction, and a bottom margin via mb-4 -->
+
+            <div class="form-row">
+                <!-- A Bootstrap row to group form fields in a horizontal line -->
+
+                <div class="form-group col-md-4">
+                    <!-- A Bootstrap column taking up 4/12 of the row's width, containing a single form group -->
+
+                    <label for="inputName">Name</label>
+                    <!-- Label associated with the input field below, identified by its 'for' attribute -->
+
+                    <input type="text" class="form-control" id="inputName" placeholder="Enter Name" required>
+                    <!-- Text input field for the user's name, styled with Bootstrap's form-control class, with a placeholder and required validation -->
+                </div>
+
+                <div class="form-group col-md-4">
+                    <!-- Another form group for the age input, taking up 4/12 of the row's width -->
+
+                    <label for="inputAge">Age</label>
+                    <!-- Label associated with the age input field -->
+
+                    <input type="number" class="form-control" id="inputAge" placeholder="Enter Age" required>
+                    <!-- Number input field for the user's age, styled and validated similarly to the name input -->
+                </div>
+
+                <div class="form-group col-md-4">
+                    <!-- Another form group for the country input, also taking up 4/12 of the row's width -->
+
+                    <label for="inputCountry">Country</label>
+                    <!-- Label associated with the country input field -->
+
+                    <input type="text" class="form-control" id="inputCountry" placeholder="Enter Country" required>
+                    <!-- Text input field for the user's country, with similar styling and validation as the previous fields -->
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <!-- A Bootstrap-styled submit button that submits the form when clicked -->
+        </form>
+
+        <!-- Bootstrap Table -->
+        <table class="table table-bordered">
+            <!-- Table element styled with Bootstrap's table and table-bordered classes for a bordered table layout -->
+
+            <thead class="thead-dark">
+                <!-- Table header section styled with Bootstrap's thead-dark class for a dark background -->
+
+                <tr>
+                    <!-- A single row within the table header -->
+
+                    <th scope="col">#</th>
+                    <!-- Header cell for the row index, with a scope attribute indicating it's a column header -->
+
+                    <th scope="col">Name</th>
+                    <!-- Header cell for the Name column -->
+
+                    <th scope="col">Age</th>
+                    <!-- Header cell for the Age column -->
+
+                    <th scope="col">Country</th>
+                    <!-- Header cell for the Country column -->
+                </tr>
+            </thead>
+
+            <tbody id="tableBody">
+                <!-- Table body where the rows will be dynamically added by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Links to an external JavaScript file (script.js) that contains the functionality for handling form submissions and updating the table -->
